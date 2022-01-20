@@ -58,6 +58,7 @@ class ExtendedHashMap(dict):
                 case _:
                     raise ValueError("Wrong condition")
 
+        @property
         def ploc(self, *args):
             string = str(*args)
             list_conditions = []
@@ -86,4 +87,3 @@ class ExtendedHashMap(dict):
                     item_condition = ''
 
             return self.__ploc_dop(list_conditions)
-
